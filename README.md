@@ -1,56 +1,69 @@
-# 🍃 Spring Framework & Enterprise Java - Full Technical Training
-### Developer: Mallu200 | Program: X-Workz Enterprise Java
+# 🍃 Learning Spring Framework | Enterprise Java Development
+### Developer: Mallu200 | Program: X-Workz Full-Stack Training
 
-This repository is a professional archive of my transition from Java SE to Enterprise-level application development. It documents my mastery of the Spring ecosystem, focusing on layered architecture, security, and persistent database management.
-
----
-
-## 🏗️ Technical Roadmap (Modules)
-I have categorized my Spring training into these core competencies, with each folder containing practical implementations:
-
-### 1. Spring Core & Configuration
-* **Inversion of Control (IoC)**: Mastery of the `ApplicationContext` and Bean lifecycle.
-* **Dependency Injection (DI)**: Implementation of `Setter` and `Constructor` injection.
-* **Component Scanning**: Utilizing `@Component`, `@Service`, `@Repository`, and `@Autowired`.
-* **Java-Based Config**: Transitioning from XML to `@Configuration` and `@Bean` definitions.
-
-### 2. Spring MVC (Web Architecture)
-* **Request Handling**: Working with `@Controller`, `@RequestMapping`, and `@RequestParam`.
-* **Data Binding**: Managing complex forms with `@ModelAttribute` and `DTOs`.
-* **View Resolution**: Configuring `InternalResourceViewResolver` for JSP/JSTL rendering.
-* **Validation**: Implementation of **JSR-303 (Hibernate Validator)** for server-side checks.
-
-### 3. Data & Persistence (Hibernate/ORM)
-* **ORM Integration**: Connecting Spring with **Hibernate 5.x**.
-* **Database Management**: Advanced configuration of `DataSource` and `LocalSessionFactoryBean`.
-* **Transactional Logic**: Ensuring data integrity using `@Transactional` at the service layer.
-* **MySQL Mastery**: Complex schema design, indexing, and persistent storage management.
-
-### 4. Enterprise Security
-* **Spring Security 5.x**: Designing custom security filter chains.
-* **Authentication**: Implementing **BCrypt** password hashing and custom user authentication providers.
-* **Authorization**: Role-Based Access Control (RBAC) for partitioned user experiences.
+This repository is a comprehensive technical archive of my transition from Java Standard Edition to the **Spring Enterprise Ecosystem**. It tracks the evolution of my skills from core dependency management to building secure, multi-role B2B platforms.
 
 ---
 
-## 🛡️ Capstone Project: Krishi-Mandi B2B Exchange
-The **"krishi-mandi-app"** folder is the final evolution of my training. It is a production-grade Agricultural Marketplace featuring:
+## 🏗️ Core Modules & Learning Path
+I have organized my training into five specialized modules, each representing a critical pillar of the Spring Framework:
 
-* **Role-Based Redirection**: A custom `AuthenticationSuccessHandler` for Farmer, Trader, and Inspector roles.
-* **Layered Workflow**: Strict separation of concerns (DTO -> Service -> Repository -> Entity).
-* **Flat UI Design**: A professional, high-contrast B2B interface using Deep Navy and Slate Gray themes.
-* **Live Marketplace**: A dynamic inventory system with real-time data fetching from MySQL.
+### 📁 01-Spring-Core-IOC
+**Focus:** Inversion of Control and the management of object lifecycles.
+* **IoC Container:** Mastering `ApplicationContext` for centralized bean management.
+* **Dependency Injection:** Practical implementation of Constructor vs. Setter Injection.
+* **Scopes & Lifecycle:** Understanding `Singleton` vs. `Prototype` and `@PostConstruct` hooks.
+* **SpEL:** Using Spring Expression Language for dynamic configuration.
 
+### 📁 02-Spring-AOP (Aspect Oriented Programming)
+**Focus:** Decoupling cross-cutting concerns from business logic.
+* **Modularity:** Removing logging and security "clutter" from core services.
+* **Logic:** Implementation of `@Before`, `@After`, and the powerful `@Around` advice.
+* **Terminology:** Practical application of JoinPoints and Pointcuts.
 
+### 📁 03-Spring-Data-JDBC-ORM
+**Focus:** Modernizing data persistence and eliminating boilerplate code.
+* **JdbcTemplate:** Internal handling of Connections, Statements, and ResultSets.
+* **Hibernate Integration:** Configuring `LocalSessionFactoryBean` for ORM mapping.
+* **Transactions:** Automated commit/rollback management using `@Transactional`.
+
+### 📁 04-Spring-MVC-Web
+**Focus:** Architecting scalable Web Applications.
+* **Front Controller Pattern:** Mastering the `DispatcherServlet` workflow.
+* **Annotations:** Using `@Controller` and `@RequestMapping` for clean URL routing.
+* **Data Flow:** Transferring data between Java and JSP/UI layers using `Model`.
+* **REST APIs:** Transitioning to JSON-based data exchange with `@RestController`.
+
+### 📁 05-Spring-Security-Testing
+**Focus:** Application hardening and quality assurance.
+* **RBAC:** Implementation of Authentication vs. Authorization.
+* **Filter Chains:** How Spring Security intercepts and protects incoming requests.
+* **Unit Testing:** Using `@ContextConfiguration` with JUnit to validate Bean logic.
 
 ---
 
-## 🛠️ Professional Skills Demonstrated
-* **Frameworks**: Spring MVC, Spring Security, Spring ORM (Hibernate).
-* **Database**: MySQL 8.0, JDBC.
-* **UI/UX**: JSP, JSTL, Professional Flat CSS Design.
-* **Tools**: Maven, Lombok, Apache Tomcat 9.0, Git, GitHub.
-* **Patterns**: Singleton, DAO, DTO, Service-Repository Pattern.
+## 🛡️ Capstone Project: Krishi-Mandi B2B Ecosystem
+The **"krishi-mandi-app"** folder represents the culmination of all the modules above into a production-grade B2B Agricultural Exchange.
+
+
+
+### 🛰️ Project Deep-Dive:
+**Krishi-Mandi** is designed to digitize the agricultural supply chain, providing a direct link between farmers and the market.
+
+* **Multi-Role Ecosystem:** * **Farmers:** Can securely register and list crop inventory with specific quintal volumes and base prices.
+    * **Traders:** Access a real-time marketplace grid to view verified assets and initiate purchase requests.
+    * **Inspectors:** Utilize a dedicated panel to audit and approve listings, ensuring quality control.
+* **Security Architecture:** Implements a sophisticated **Spring Security Filter Chain** with **BCrypt** password hashing. Access is strictly partitioned using **Role-Based Access Control (RBAC)**.
+* **Data Integrity:** Employs a tiered **DTO → Service → Entity** architecture. Data is sanitized in the DTO layer, processed via `@Service` logic, and persisted into **MySQL 8.0** using **Hibernate ORM**.
+* **Enterprise UI:** A professional, distraction-free **Flat Design** interface using a **Deep Navy (#1B2631)** and **Slate Gray (#708090)** palette, optimized for high-efficiency business operations.
+
+---
+
+## 🛠️ Technical Competencies
+* **Frameworks:** Spring Core, AOP, MVC, Security, Hibernate ORM.
+* **Database:** MySQL 8.0 (Workbench), JDBC Template.
+* **Web Tech:** JSP, JSTL, EL, CSS3 (Professional Flat Design), Tomcat 9.0.
+* **Tools:** Maven, Lombok, Git/GitHub, JUnit.
 
 ---
 © 2026 Mallu200 | Developed at X-Workz Training Centre
